@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" >
+<wicket:head>
+    <meta charset="utf-8"/>
+    <title>Spring Boot - Apache Wicket Quickstart</title>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'http://localhost:8080' 'unsafe-inline';">
+</wicket:head>
+<body>
+<wicket:extend >
+
+    <div class="form-style-5">
+        <form wicket:id="pdzForm">
+            <label>Режим работы
+                <input type="text" wicket:id="mode" id="mode" value="1" placeholder="Введите номер режима от 1-16">
+            </label>
+            <label>Выбрать режим, не учитывая введенные значения
+                <input value="false" type="checkbox" wicket:id="bool" id="bool" >
+            </label>
+            <fieldset>
+                <legend>Предельно допустимая концентрация</legend>
+                <label onload="getElementById('bool').value=getElementById('bool').checked">ПДК CO
+                    <input type="text" wicket:id="PDK_CO" id="pdk_CO" placeholder="ПДК CO" >
+                </label>
+                <label>ПДК CO2
+                    <input type="text" wicket:id="PDK_CO2" id="pdk_CO2" placeholder="ПДК CO2" >
+                </label>
+                <label>ПДК NO
+                    <input type="text" wicket:id="PDK_NO" id="pdk_NO" placeholder="ПДК NO" >
+                </label>
+                <label>ПДК NO2
+                    <input type="text" wicket:id="PDK_NO2" id="pdk_NO2" placeholder="ПДК NO2" >
+                </label>
+                <label>ПДК NOx
+                    <input type="text" wicket:id="PDK_NOx" id="pdk_NOx" placeholder="ПДК NOx" >
+                </label>
+                <label>ПДК SO2
+                    <input type="text" wicket:id="PDK_SO2" id="pdk_SO2" placeholder="ПДК SO2" >
+                </label>
+                <label>ПДК CH4
+                    <input type="text" wicket:id="PDK_CH4" id="pdk_CH4" placeholder="ПДК CH4" >
+                </label>
+                <label>ПДК тв.в.
+                    <input type="text" wicket:id="PDK_dust" id="pdk_dust" placeholder="ПДК тв.в." >
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend> Предельно допустимые выбросы</legend>
+                <label>ПДВ CO
+                    <input type="text" wicket:id="PDV_CO" id="pdv_CO" placeholder="ПДВ CO" >
+                </label>
+                <label>ПДВ CO2
+                    <input type="text" wicket:id="PDV_CO2" id="pdv_CO2" placeholder="ПДВ CO2" >
+                </label>
+                <label>ПДВ NO
+                    <input type="text" wicket:id="PDV_NO" id="pdv_NO" placeholder="ПДВ NO" >
+                </label>
+                <label>ПДВ NO2
+                    <input type="text" wicket:id="PDV_NO2" id="pdv_NO2" placeholder="ПДВ NO2" >
+                </label>
+                <label>ПДВ NOx
+                    <input type="text" wicket:id="PDV_NOx" id="pdv_NOx" placeholder="ПДВ NOx" >
+                </label>
+                <label>ПДВ SO2
+                    <input type="text" wicket:id="PDV_SO2" id="pdv_SO2" placeholder="ПДВ SO2" >
+                </label>
+                <label>ПДВ CH4
+                    <input type="text" wicket:id="PDV_CH4" id="pdv_CH4" placeholder="ПДВ CH4" >
+                </label>
+                <label>ПДВ тв.в.
+                    <input type="text" wicket:id="PDV_dust" id="pdv_dust" placeholder="ПДК тв.в." >
+                </label>
+            </fieldset>
+            <input id="sub" type="submit" value="Сохранить"/>
+
+        </form>
+    </div>
+
+</wicket:extend>
+</body>
+</html>

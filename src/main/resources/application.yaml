@@ -1,0 +1,10 @@
+spring:
+  config:
+    location: config
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.SQLServer2008Dialect
+        show_sql: true
